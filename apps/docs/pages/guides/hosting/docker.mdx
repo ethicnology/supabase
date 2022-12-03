@@ -33,7 +33,7 @@ cd supabase/docker
 cp .env.example .env
 
 # Start
-docker-compose up
+docker compose up
 ```
 
 Now visit [http://localhost:3000](http://localhost:3000) to start using Supabase Studio.
@@ -82,7 +82,7 @@ To keep the setup simple, we made some choices that may not be optimal for produ
 
 ### Using an external database
 
-We strongly [recommend](../../guides/hosting/overview#managing-your-database) that you decouple your database from `docker-compose` before deploying.
+We strongly [recommend](../../guides/hosting/overview#managing-your-database) that you decouple your database from `docker compose` before deploying.
 The middleware will run with any PostgreSQL database that has logical replication enabled. The following environment variables should be updated
 in the `.env` file to point to your external database:
 
